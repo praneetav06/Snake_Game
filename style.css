@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Plus+Jakarta+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: url("bg.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#highScoreBox {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "New Tegomin", serif;
+}
+
+#scoreBox {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "New Tegomin", serif;
+}
+
+#board {
+  background: linear-gradient(#ccff33, #78d328);
+  width: 90vmin;
+  height: 95vmin;
+  border: 5px dashed black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.food {
+  background-color: red;
+  border-radius: 50%;
+  border: 0.25vmin solid white;
+}
+
+.head {
+  background-color: #000000;
+  border: 0.25vmin solid white;
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+.snake {
+  background-color: #000000;
+  border: 0.25vmin solid white;
+  border-radius: 10px;
+}
